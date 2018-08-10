@@ -60,9 +60,8 @@ static NSString * const kCustomActivityType = @"com.Lemon.custom.activity";
     NSLog(@"prepareWithActivityItems===");
 }
 
+//实现activity的事件响应
 - (void)performActivity {
-    //这里就可以关联外面的app进行分享操作了
-
     //用safari打开网址
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://www.baidu.com"]];
     
